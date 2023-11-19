@@ -24,7 +24,7 @@ const Profile = () => {
                     <input
                         type="text"
                         className="h-8 w-4/5 rounded-sm focus:outline-black
-                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-white bg-white bg-opacity-70 border-2 border-gray-700 mt-4"
+                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-white bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
                         placeholder=" Username:"
                     />
                     <span className="w-4/5 mt-[8vh] tracking-wider">
@@ -33,7 +33,7 @@ const Profile = () => {
                     <input
                         type="password"
                         className="h-8 w-4/5 rounded-sm 
-                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-white bg-white bg-opacity-70 border-2 border-gray-700 mt-4"
+                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-white bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
                         placeholder="Password:"
                     />
 
