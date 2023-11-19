@@ -1,23 +1,28 @@
-import React from "react";
-const handleClick = async () => {
-    try {
-      const response = await fetch('http://localhost:your-backend-port/your-endpoint', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          // Add any additional headers if needed
-        },
-        body: JSON.stringify({ key: 'value' }), // Your request payload
-      });
+import React, { useState } from "react";
+const SignUp = () => {
+    const [formData, setFormData] = useState({
+        firstName: "a",
+        email: "a@gmail.com",
+        password: "dweds",
+    });
 
-      const result = await response.json();
-      setData(result);
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  };
-  
-const SignIn = () => {
+    const handleClick = async () => {
+        try {
+            const response = await fetch("http://127.0.0.1:5000/user/signup", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+            console.log(result);
+        } catch (error) {
+            console.error("Error:", error);
+        }
+    };
+
     return (
         <div className="w-screen h-screen flex flex-col justify-center items-center">
             {" "}
@@ -37,7 +42,7 @@ const SignIn = () => {
                 <input
                     type="text"
                     className="h-8 w-4/5 rounded-sm focus:outline-black
-                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-white bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
+                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-black bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
                     placeholder="ie: John"
                 />
 
@@ -47,7 +52,7 @@ const SignIn = () => {
                 <input
                     type="text"
                     className="h-8 w-4/5 rounded-sm focus:outline-black
-                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-white bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
+                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-black bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
                     placeholder="ie: Doe"
                 />
 
@@ -55,7 +60,7 @@ const SignIn = () => {
                 <input
                     type="text"
                     className="h-8 w-4/5 rounded-sm focus:outline-black
-                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-white bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
+                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-black bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
                     placeholder="E-mail:"
                 />
 
@@ -63,21 +68,24 @@ const SignIn = () => {
                 <input
                     type="password"
                     className="h-8 w-4/5 rounded-sm 
-                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-white bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
+                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-black bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
                     placeholder="Create a password:"
                 />
 
-                <span className="w-4/5 mt-[2vh] tracking-wider">CONFIRM PASSWORD:</span>
+                <span className="w-4/5 mt-[2vh] tracking-wider">
+                    CONFIRM PASSWORD:
+                </span>
                 <input
                     type="password"
                     className="h-8 w-4/5 rounded-sm 
-                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-white bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
+                  placeholder:text-gray-500 sm:pl-[14px] pl-[8px] text-black bg-white bg-opacity-70 border-2 border-gray-300 mt-4"
                     placeholder="Should be the same as the password above."
                 />
 
                 <button
                     type="submit"
                     className=" bg-gray-200 w-4/5 h-[56px] text-2xl font-light tracking-widest mt-[4vh] rounded-sm hover:bg-gray-400 transition duration-500 ease-in-out"
+                    onClick={handleClick}
                 >
                     CONFIRM
                 </button>
@@ -93,4 +101,4 @@ const SignIn = () => {
     );
 };
 
-export default SignIn;
+export default SignUp;
