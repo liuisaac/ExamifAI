@@ -1,5 +1,22 @@
 import React from "react";
+const handleClick = async () => {
+    try {
+      const response = await fetch('http://localhost:your-backend-port/your-endpoint', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          // Add any additional headers if needed
+        },
+        body: JSON.stringify({ key: 'value' }), // Your request payload
+      });
 
+      const result = await response.json();
+      setData(result);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+  
 const SignIn = () => {
     return (
         <div className="w-screen h-screen flex flex-col justify-center items-center">
