@@ -1,17 +1,20 @@
-import { Hero, NavbarH } from './components'
+import { tesselation } from './assets'
+import { Hero, Mission, Anvil, NavbarH } from './components'
 import './index.css'
-
 function App() {
   return (
     <>
     <div>
       <NavbarH />
     </div>
-    <div className='w-screen h-screen bg-black'>
+    <div className='w-screen h-screen bg-black bg-[url("../assets/tesselation.png")]'>
+    <img src={tesselation} className='w-full h-full absolute'/>
       <Hero />
     </div>
-    <div className='w-screen h-screen bg-gray-600'></div>
-    <div className='w-screen h-screen bg-gray-700'></div>
+    <div className='w-screen h-screen bg-gray-600'>
+      <Mission />
+    </div>
+    <div className='w-screen h-screen bg-black'><Anvil/></div>
     </>
   )
 }

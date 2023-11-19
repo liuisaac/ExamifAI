@@ -4,14 +4,19 @@ import { useState } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { useMousePosition } from "./useMousePosition";
 import { PerspectiveCamera } from "@react-three/drei";
+
 const Hero = () => {
     const hober = useLoader(GLTFLoader, "./torus.glb");
     const position = useMousePosition();
     return (
-        <div className="mt-16 bg-white flex flex-row h-screen w-screen justify-center overflow-visible">
-            <div className="absolute mt-[40vh] font-poppins text-red-500 font-bold tracking-widest mx-auto text-7xl">
-                "PRACTICE MAKES PERFECT"
-
+        <div className="mt-16 flex flex-row h-screen w-screen justify-center overflow-visible backdrop-blur-sm bg-white bg-opacity-70">
+            <div className="absolute mt-[40vh] font-poppins flex flex-col justify-center items-center">
+                <span className="text-red-500 font-bold tracking-widest text-[5.5rem] drop-shadow-[0_5px_5px_rgba(0,0,0,0.15)] whitespace-nowrap">
+                    "PRACTICE MAKES PERFECT"
+                </span>
+                <span className="text-gray-700 italic text-3xl drop-shadow-none mt-12 font-light tracking-[1rem] ">
+                    Next Generation AI-Powered Exam Tools
+                </span>
             </div>
             <Canvas>
                 <PerspectiveCamera
@@ -35,7 +40,7 @@ const Hero = () => {
                     position={[-30, -100, 30]}
                     intensity={6}
                 />
-                                <directionalLight
+                <directionalLight
                     color="white"
                     position={[-30, -100, -30]}
                     intensity={6}
