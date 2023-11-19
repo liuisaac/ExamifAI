@@ -1,5 +1,5 @@
 import React from "react";
-import { NavbarP, SignIn } from "../components";
+import { NavbarP, SignUp } from "../components";
 
 const Profile = () => {
     return (
@@ -7,7 +7,9 @@ const Profile = () => {
             <div>
                 <NavbarP />
             </div>
-            <SignIn />
+            <div className="mt-16">
+                <SignUp />
+            </div>
         </div>
     );
 };

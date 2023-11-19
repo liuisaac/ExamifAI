@@ -5,7 +5,7 @@ const NavbarP = () => {
     return (
         <div
             className="fixed top-0 left-0 h-16 w-screen bg-gray-200 
-        overflow-hidden flex flex-row items-center justify-start"
+        overflow-hidden flex flex-row items-center justify-start  z-50"
         >
             <img src={White_back} className="ml-16 h-12" />
 
