@@ -3,7 +3,7 @@ import { Hero, Mission, Anvil, NavbarH } from './components'
 import './index.css'
 function App() {
   return (
-    <>
+    <div className='bg-black overflow-hidden'>
     <div>
       <NavbarH />
     </div>
@@ -14,8 +14,8 @@ function App() {
     <div className='w-screen h-screen bg-gray-600'>
       <Mission />
     </div>
-    <div className='w-screen h-screen bg-black'><Anvil/></div>
-    </>
+    <div className='w-screen h-screen bg-black '><Anvil/></div>
+    </div>
   )
 }
 

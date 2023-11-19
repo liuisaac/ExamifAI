@@ -11,7 +11,7 @@ const SignIn = () => {
                     SIGN IN
                 </div>
                 <span className="text-black text-md font-light tracking-widest mt-10">
-                    WELCOME BACK TO EXAMIFY
+                    WELCOME BACK TO EXAMIFAI
                 </span>
                 <span className="w-4/5 mt-[8vh] tracking-wider">E-MAIL:</span>
                 <input

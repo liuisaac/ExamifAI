@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { useMousePosition } from "./useMousePosition";
 import { PerspectiveCamera, PresentationControls } from "@react-three/drei";
 
-const Hero = () => {
+const Anvil = () => {
     const hober = useLoader(GLTFLoader, "./anvil.glb");
     const position = useMousePosition();
     return (
@@ -24,6 +24,7 @@ const Hero = () => {
                 </a>
             </div>
             <div className="w-1/2">
+                <span>Drag to Rotate</span>
                 <Canvas>
                     <PerspectiveCamera
                         makeDefault
@@ -63,4 +64,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Anvil;
