@@ -43,7 +43,7 @@ const Hero = () => {
                 <ambientLight />
                 <group
                     position={[-1, 0, 0]}
-                    rotation={[0, (-(0.3 * 1) / 2000) * position.x + 0.1, 0]}
+                    rotation={[0, (-(3 * 1) / 2000) * position.x + 0.3, 0]}
                 >
                     <primitive object={hober.scene} />
                 </group>
