@@ -11,12 +11,23 @@ const NavbarH = () => {
 
             <div
                 className="flex flex-row gap-12 text-light 
-            tracking-widest text-black ml-[70vh] text-sm"
+            tracking-widest text-black ml-[90vh] text-sm"
             >
-                <a href={`/`}><span className="underline decoration-red-500 cursor-pointer transition duration-200 ease-in-out text-black font-light font-poppins">HOME</span></a>
-                <a href={`/forge`}><span className="hover:underline decoration-red-500 cursor-pointer transition duration-200 ease-in-out text-black font-light font-poppins">THE FORGE</span></a>
-                <a href={`/hackcamp2023`}><span className="hover:underline decoration-red-500 cursor-pointer transition duration-200 ease-in-out text-black font-light font-poppins">HACKCAMP2023</span></a>
-                <a href={`/profile`}><span className="hover:underline decoration-red-500 cursor-pointer transition duration-200 ease-in-out text-black font-light font-poppins">PROFILE</span></a>
+                <a href={`/`}>
+                    <span className="underline decoration-red-500 cursor-pointer transition duration-200 ease-in-out text-black font-light font-poppins">
+                        HOME
+                    </span>
+                </a>
+                <a href={`/forge`}>
+                    <span className="hover:underline decoration-red-500 cursor-pointer transition duration-200 ease-in-out text-black font-light font-poppins">
+                        THE FORGE
+                    </span>
+                </a>
+                <a href={`/profile`}>
+                    <span className="hover:underline decoration-red-500 cursor-pointer transition duration-200 ease-in-out text-black font-light font-poppins">
+                        PROFILE
+                    </span>
+                </a>
             </div>
         </div>
     );

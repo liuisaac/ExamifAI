@@ -1,14 +1,18 @@
 import React from "react";
-import { NavbarF } from "../components";
+import { NavbarF, Forged, Forgery } from "../components";
 
 const Forge = () => {
     return (
-        <div className="bg-gray-800 w-screen h-screen text-white">
+        <div className="bg-[#1a1a1a] w-screen h-full text-white">
             <div>
                 <NavbarF />
             </div>
+            
             <div className="mt-16">
-                hi
+                <Forged />
+            </div>
+            <div className="w-screen h-full bg-gray-600">
+                <Forgery />
             </div>
 
         </div>

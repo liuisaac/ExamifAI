@@ -9,9 +9,12 @@ import Anvil from "./Home/Anvil.jsx"
 
 import SignIn from "./Profile/SignIn.jsx"
 import SignUp from "./Profile/SignUp.jsx"
+import Forged from "./Forge/Forged.jsx";
+import Forgery from "./Forge/Forgery.jsx";
+
 
 export {
     NavbarH, NavbarF, NavbarHC, NavbarP,
-    Hero, Mission, Anvil,
+    Hero, Mission, Anvil, Forged, Forgery,
     SignIn, SignUp
 }

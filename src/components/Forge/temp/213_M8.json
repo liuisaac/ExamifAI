@@ -1,0 +1,257 @@
+{
+  "questions": [
+    {
+      "question": "Which textbook reading is associated with this unit?",
+      "options": [
+        " [12.1] ",
+        " [12.2] ",
+        " [12.3] ",
+        " [12.4] "
+      ],
+      "answer": "12.3",
+      "solution": "The textbook reading associated with this unit is 12.3."
+    },
+    {
+      "question": "What are the learning goals of this unit?",
+      "options": [
+        " [Write C programs using interrupts] ",
+        " [Explain the execution of a single-threaded program] ",
+        " [Convert an event-driven program into procedure-driven using threads] ",
+        " [Identify the process of switching between threads at the instruction level] "
+      ],
+      "answer": "Convert an event-driven program into procedure-driven using threads",
+      "solution": "The learning goal of this unit is to convert an event-driven C program into procedure-driven using threads."
+    },
+    {
+      "question": "What does it mean to have multiple independent streams of execution in a program?",
+      "options": [
+        " [The program can run multiple processes simultaneously] ",
+        " [The program can run multiple threads simultaneously] ",
+        " [The program can run multiple functions simultaneously] ",
+        " [The program can run multiple instances of the same function simultaneously] "
+      ],
+      "answer": "The program can run multiple threads simultaneously",
+      "solution": "Having multiple independent streams of execution in a program means that the program can run multiple threads simultaneously."
+    },
+    {
+      "question": "What is the purpose of an asynchronous programming callback function?",
+      "options": [
+        " [To trigger an event when an I/O operation completes] ",
+        " [To handle the completion of an I/O operation] ",
+        " [To perform another operation while waiting for an I/O operation to complete] ",
+        " [To initiate an I/O operation] "
+      ],
+      "answer": "To handle the completion of an I/O operation",
+      "solution": "The purpose of an asynchronous programming callback function is to handle the completion of an I/O operation."
+    },
+    {
+      "question": "In the context of asynchronous programming, what must happen for an event to trigger another event?",
+      "options": [
+        " [The events must be part of the same event handler function] ",
+        " [The events must be part of different event handler functions] ",
+        " [The events must be called by the same callback function] ",
+        " [The events must be triggered by the same I/O operation] "
+      ],
+      "answer": "The events must be part of the same event handler function",
+      "solution": "In the context of asynchronous programming, for an event to trigger another event, the events must be part of the same event handler function."
+    },
+    {
+      "question": "What is the order of program events in an asynchronous program using threads?",
+      "options": [
+        " [Procedure calls, cause/effect of interrupts, logical control flow] ",
+        " [Logical control flow, starting at main, another control flow] ",
+        " [Another control flow, another control flow] ",
+        " [Another control flow, starting at main, another control flow] "
+      ],
+      "answer": "Procedure calls, cause/effect of interrupts, logical control flow",
+      "solution": "The order of program events in an asynchronous program using threads is: procedure calls, cause/effect of interrupts, and logical control flow."
+    },
+    {
+      "question": "What does the execution order on a single CPU look like for a program with multiple threads?",
+      "options": [
+        " [main, foo, diskRead, doSomethingElse, ...] ",
+        " [M, A, dR0, X0, X1, X2, X3...int0, dI0, B, C, D, dR1, Y0, Y1, Y2, Y3...] ",
+        " [main, foo, diskISR, calls/callbacks, ...] ",
+        " [AnotherCompletion, yetMore, G, N, I, L, L, O, P...] "
+      ],
+      "answer": "M, A, dR0, X0, X1, X2, X3...int0, dI0, B, C, D, dR1, Y0, Y1, Y2, Y3...",
+      "solution": "The execution order of a program with multiple threads on a single CPU is: main, foo, diskRead, doSomethingElse, ... int0, dI0, B, C, D, dR1, Y0, Y1, Y2, Y3..."
+    },
+    {
+      "question": "In a system with infinite CPUs, what is the option for running multiple threads concurrently?",
+      "options": [
+        " [Polling] ",
+        " [Interrupts] ",
+        " [Blocking] ",
+        " [Scheduling] "
+      ],
+      "answer": "Polling",
+      "solution": "In a system with infinite CPUs, the option for running multiple threads concurrently is polling."
+    },
+    {
+      "question": "According to Edsger Dijkstra, what was the group's main contribution to system design?",
+      "options": [
+        " [Prevention of errors] ",
+        " [Debugging techniques] ",
+        " [Fear-inspired carefulness] ",
+        " [Extensive experience with interrupts] "
+      ],
+      "answer": "Fear-inspired carefulness",
+      "solution": "According to Edsger Dijkstra, the group's main contribution to system design was fear-inspired carefulness."
+    },
+    {
+      "question": "What is the definition of a thread in the context of computer systems?",
+      "options": [
+        " [A single stream of synchronous execution of a program] ",
+        " [A single stream of asynchronous execution of a program] ",
+        " [A single stream of parallel execution of a program] ",
+        " [A single stream of serial execution of a program] "
+      ],
+      "answer": "A single stream of synchronous execution of a program",
+      "solution": "In the context of computer systems, a thread is defined as a single stream of synchronous execution of a program."
+    },
+    {
+      "question": "What happens when a thread is stopped and waiting for an event to occur?",
+      "options": [
+        " [The thread is blocked] ",
+        " [The thread is unblocked] ",
+        " [The thread is preempted] ",
+        " [The thread is terminated] "
+      ],
+      "answer": "The thread is blocked",
+      "solution": "When a thread is stopped and waiting for an event to occur, the thread is blocked."
+    },
+    {
+      "question": "Which of the following best describes the purpose of synchronization primitives in thread programming?",
+      "options": [
+        " [To ensure mutual exclusion and for waiting and signaling] ",
+        " [To coordinate thread execution with I/O devices] ",
+        " [To handle interrupts and callbacks] ",
+        " [To prevent deadlocks and race conditions] "
+      ],
+      "answer": "To ensure mutual exclusion and for waiting and signaling",
+      "solution": "The purpose of synchronization primitives in thread programming is to ensure mutual exclusion and for waiting and signaling."
+    },
+    {
+      "question": "What happens when a thread is unblocked?",
+      "options": [
+        " [The thread is terminated] ",
+        " [The thread is moved to the blocked queue] ",
+        " [The thread is moved to the runnable queue] ",
+        " [The thread is moved to the dead queue] "
+      ],
+      "answer": "The thread is moved to the runnable queue",
+      "solution": "When a thread is unblocked, it is moved to the runnable queue."
+    },
+    {
+      "question": "What is the purpose of joining threads in thread programming?",
+      "options": [
+        " [To synchronize thread execution] ",
+        " [To prevent threads from running simultaneously] ",
+        " [To allocate CPU resources to threads] ",
+        " [To identify the execution order of threads] "
+      ],
+      "answer": "To synchronize thread execution",
+      "solution": "The purpose of joining threads in thread programming is to synchronize thread execution."
+    },
+    {
+      "question": "What happens if no other thread plans to join with a thread?",
+      "options": [
+        " [The thread is blocked] ",
+        " [The thread is unblocked] ",
+        " [The thread is terminated] ",
+        " [The thread is detached] "
+      ],
+      "answer": "The thread is detached",
+      "solution": "If no other thread plans to join with a thread, the thread is detached."
+    },
+    {
+      "question": "What is the purpose of a yield function in thread programming?",
+      "options": [
+        " [To stop the current thread and switch to a different thread] ",
+        " [To block the current thread and switch to a different thread] ",
+        " [To preempt the current thread and start a new thread] ",
+        " [To unblock the current thread and start a new thread] "
+      ],
+      "answer": "To stop the current thread and switch to a different thread",
+      "solution": "The purpose of a yield function in thread programming is to stop the current thread and switch to a different thread."
+    },
+    {
+      "question": "What function does the uthread_create procedure serve?",
+      "options": [
+        " [To block the current thread] ",
+        " [To create and start a new thread] ",
+        " [To join two threads together] ",
+        " [To detach a thread] "
+      ],
+      "answer": "To create and start a new thread",
+      "solution": "The uthread_create procedure is used to create and start a new thread."
+    },
+    {
+      "question": "What is the purpose of a thread's priority in thread scheduling?",
+      "options": [
+        " [To determine the maximum runtime of the thread] ",
+        " [To ensure fair access to the processor among threads] ",
+        " [To guarantee thread progress] ",
+        " [To control the number of runnable threads] "
+      ],
+      "answer": "To ensure fair access to the processor among threads",
+      "solution": "The purpose of a thread's priority in thread scheduling is to ensure fair access to the processor among threads."
+    },
+    {
+      "question": "What is the primary mechanism for implementing pre-emption in thread scheduling?",
+      "options": [
+        " [Blocking and unblocking threads] ",
+        " [Timer interrupts] ",
+        " [Thread switching] ",
+        " [Quantum expiration] "
+      ],
+      "answer": "Timer interrupts",
+      "solution": "The primary mechanism for implementing pre-emption in thread scheduling is timer interrupts."
+    },
+    {
+      "question": "In the context of thread scheduling, what is the purpose of a quantum?",
+      "options": [
+        " [To determine the order of thread execution] ",
+        " [To limit the runtime of a thread] ",
+        " [To prevent thread pre-emption] ",
+        " [To synchronize thread operations] "
+      ],
+      "answer": "To limit the runtime of a thread",
+      "solution": "In the context of thread scheduling, the purpose of a quantum is to limit the runtime of a thread."
+    },
+    {
+      "question": "What is the purpose of a timer interrupt in thread scheduling?",
+      "options": [
+        " [To synchronize thread operations] ",
+        " [To block threads until a specified time has passed] ",
+        " [To pre-empt running threads] ",
+        " [To control the order of thread execution] "
+      ],
+      "answer": "To pre-empt running threads",
+      "solution": "The purpose of a timer interrupt in thread scheduling is to pre-empt running threads."
+    },
+    {
+      "question": "What is the purpose of the uthread_join function?",
+      "options": [
+        " [To create a new thread] ",
+        " [To synchronize thread execution] ",
+        " [To allocate CPU resources to a thread] ",
+        " [To block a thread until another thread completes] "
+      ],
+      "answer": "To block a thread until another thread completes",
+      "solution": "The purpose of the uthread_join function is to block a thread until another thread completes."
+    },
+    {
+      "question": "What is the purpose of the uthread_detach function?",
+      "options": [
+        " [To block a thread] ",
+        " [To synchronize thread execution] ",
+        " [To terminate a thread] ",
+        " [To indicate that no thread will join with another thread] "
+      ],
+      "answer": "To indicate that no thread will join with another thread",
+      "solution": "The purpose of the uthread_detach function is to indicate that no thread will join with another thread."
+    }
+  ]
+}

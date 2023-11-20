@@ -1,0 +1,158 @@
+{
+  "questions": [
+    {
+      "question": "What are the 4 areas of memory in C++?",
+      "options": [
+        " [Code, stack, heap, NULL] ",
+        " [Code, heap, NULL, stack] ",
+        " [Stack, heap, NULL, code] ",
+        " [Heap, stack, NULL, code] "
+      ],
+      "answer": "Code, stack, heap, NULL",
+      "solution": "According to the slides, the 4 areas of memory in C++ are code, stack, heap, and NULL."
+    },
+    {
+      "question": "What is the difference between actual parameters and formal parameters in C++?",
+      "options": [
+        " [Actual parameters are values passed to a function, while formal parameters are variables found in the function signature] ",
+        " [Actual parameters are variables found in the function signature, while formal parameters are values passed to a function] ",
+        " [Actual parameters are values passed to a function, while formal parameters are variables found in the function body] ",
+        " [Actual parameters are variables found in the function body, while formal parameters are values passed to a function] "
+      ],
+      "answer": "Actual parameters are values passed to a function, while formal parameters are variables found in the function signature",
+      "solution": "As mentioned in the slides, actual parameters are the values or variables specified by the function caller, while formal parameters are the variables found in the signature/header of the function itself."
+    },
+    {
+      "question": "How are parameters passed in C++ by default?",
+      "options": [
+        " [By value] ",
+        " [By reference] ",
+        " [By pointer] ",
+        " [By address] "
+      ],
+      "answer": "By value",
+      "solution": "According to the slides, most parameters in C++ are passed by value, which means that the value of the actual parameter is copied to the formal parameter when the function is called."
+    },
+    {
+      "question": "What is a pointer?",
+      "options": [
+        " [A variable that stores an address rather than a value] ",
+        " [A variable that stores a value rather than an address] ",
+        " [A variable that stores both an address and a value] ",
+        " [A variable that does not store any value or address] "
+      ],
+      "answer": "A variable that stores an address rather than a value",
+      "solution": "As described in the slides, a pointer is a special type of variable that stores an address rather than a value. The address is used to find a value elsewhere in memory."
+    },
+    {
+      "question": "What is the correct way to declare a pointer variable in C++?",
+      "options": [
+        " [datatype* identifier] ",
+        " [datatype identifier*] ",
+        " [datatype * identifier] ",
+        " [datatype *identifier] "
+      ],
+      "answer": "datatype* identifier",
+      "solution": "According to the slides, the correct way to declare a pointer variable in C++ is by using the datatype* identifier format, where the '*' symbol indicates that it is a pointer."
+    },
+    {
+      "question": "What is the purpose of the address operator '&' in C++?",
+      "options": [
+        " [To assign the address of an existing variable to a pointer] ",
+        " [To access the value which a pointer points to] ",
+        " [To create a new variable in dynamic memory] ",
+        " [To deallocate memory in dynamic memory] "
+      ],
+      "answer": "To assign the address of an existing variable to a pointer",
+      "solution": "As stated in the slides, the address operator '&' in C++ is used to assign the address of an existing variable to a pointer."
+    },
+    {
+      "question": "What is the purpose of dereferencing a pointer?",
+      "options": [
+        " [To access the address stored in the pointer] ",
+        " [To access the value stored in the pointer] ",
+        " [To assign a new value to the pointer] ",
+        " [To deallocate memory in dynamic memory] "
+      ],
+      "answer": "To access the value stored in the pointer",
+      "solution": "As mentioned in the slides, dereferencing a pointer in C++ is done using the '*' operator and it allows access to the value stored in the pointer."
+    },
+    {
+      "question": "How can pointers be used in function parameters?",
+      "options": [
+        " [To access and/or modify the actual parameter] ",
+        " [To create local variables within the function] ",
+        " [To pass multiple values to a function] ",
+        " [To return the address of a variable] "
+      ],
+      "answer": "To access and/or modify the actual parameter",
+      "solution": "The slides explain that passing pointer parameters to a function allows the function to access and/or modify the actual parameter, which is useful when you want to make changes to a variable outside of the function."
+    },
+    {
+      "question": "What is a memory leak?",
+      "options": [
+        " [When memory is not deallocated after it is no longer needed] ",
+        " [When memory is deallocated before it is no longer needed] ",
+        " [When memory is used without being allocated] ",
+        " [When memory is allocated but never used] "
+      ],
+      "answer": "When memory is not deallocated after it is no longer needed",
+      "solution": "According to the slides, a memory leak occurs when memory is not deallocated after it is no longer needed, leading to a waste of memory."
+    },
+    {
+      "question": "What is the purpose of a linked list in C++?",
+      "options": [
+        " [To store data persistently in dynamic memory] ",
+        " [To store data temporarily in static memory] ",
+        " [To store data persistently in static memory] ",
+        " [To store data temporarily in dynamic memory] "
+      ],
+      "answer": "To store data persistently in dynamic memory",
+      "solution": "As mentioned in the slides, linked lists are data structures used to store data persistently in dynamic memory, as it is not possible to allocate them to the call stack."
+    },
+    {
+      "question": "What is the advantage of a doubly-linked list over a singly-linked list?",
+      "options": [
+        " [Allows traversal or access towards the front of the list] ",
+        " [Performs insertions and removals in constant time] ",
+        " [Requires less pointer management in programming] ",
+        " [Uses less memory for storage] "
+      ],
+      "answer": "Allows traversal or access towards the front of the list",
+      "solution": "The slides explain that a doubly-linked list allows traversal or access towards the front of the list by providing links to previous nodes, which is an advantage over a singly-linked list."
+    },
+    {
+      "question": "What is the running time for printing the contents of a singly-linked list in reverse using recursion?",
+      "options": [
+        " [O(n)] ",
+        " [O(log n)] ",
+        " [O(n^2)] ",
+        " [O(1)] "
+      ],
+      "answer": "O(n)",
+      "solution": "According to the slides, the running time for printing the contents of a singly-linked list in reverse using recursion is O(n), where n is the number of nodes in the list."
+    },
+    {
+      "question": "What is the running time for printing the contents of a singly-linked list in reverse for odd-indexed nodes using recursion?",
+      "options": [
+        " [O(n)] ",
+        " [O(log n)] ",
+        " [O(n^2)] ",
+        " [O(1)] "
+      ],
+      "answer": "O(n)",
+      "solution": "The running time for printing the contents of a singly-linked list in reverse for odd-indexed nodes using recursion is O(n), as mentioned in the slides."
+    },
+    {
+      "question": "What is the running time for reversing a singly-linked list using recursion?",
+      "options": [
+        " [O(n)] ",
+        " [O(log n)] ",
+        " [O(n^2)] ",
+        " [O(1)] "
+      ],
+      "answer": "O(n)",
+      "solution": "The slides state that the running time for reversing a singly-linked list using recursion is O(n), where n is the number of nodes in the list."
+    }
+  ]
+}

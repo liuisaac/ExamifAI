@@ -1,0 +1,92 @@
+{
+  "questions": [
+    {
+      "question": "What is the probability that a sequence of 9 bits is a parity-checked byte?",
+      "options": [
+        " [2^9] ",
+        " [2^8] ",
+        " [2^7] ",
+        " [2^6] "
+      ],
+      "answer": "2^8",
+      "solution": "The number of 9-bit sequences is 2^9 (9 independent choices of 0 or 1). The number of 9-bit parity-checked bytes is 2^8 (no choice for the parity bit)."
+    },
+    {
+      "question": "How many possible passwords are there?",
+      "options": [
+        " [10^6] ",
+        " [10^7] ",
+        " [10^8] ",
+        " [10^9] "
+      ],
+      "answer": "10^6",
+      "solution": "We are forced to use the q and can choose 0, 1, or 2 t's. Each choice creates a non-overlapping set of passwords. There are 6 digits to choose from with no repeated digits, which can be ordered in 9! ways. However, this counts all rearrangements of the 2 t's, so we divide by 2!. The number of possible passwords is (10 choose 6) * 9!/2! = 10^6."
+    },
+    {
+      "question": "How many different rearrangements are there of the word baobabs?",
+      "options": [
+        " [2] ",
+        " [6] ",
+        " [12] ",
+        " [24] "
+      ],
+      "answer": "24",
+      "solution": "There are 7 letters in total, 2 of which are 'b', and the rest are unique. The number of different rearrangements is 7!/(2! * 1! * 1! * 1! * 1! * 1! * 1!) = 24."
+    },
+    {
+      "question": "How many e-mail addresses will you need to spam to reach your soulmate?",
+      "options": [
+        " [5 * 26 * 7] ",
+        " [5 * 5 * 7] ",
+        " [5 * 26 * 8] ",
+        " [5 * 5 * 8] "
+      ],
+      "answer": "5 * 26 * 7",
+      "solution": "The number of possible nicknames is 5, the number of possible uppercase letters is 26, and the number of possible alternate spellings of a family name is 7. The number of possible e-mail addresses is 5 * 26 * 7 = 910."
+    },
+    {
+      "question": "What does the indicated part of the code do?",
+      "options": [
+        " [Saves the from thread’s registers to the stack and restores the to thread’s registers from the stack.] ",
+        " [Saves the from thread’s pc to the stack and restores the to thread’s pc from the stack.] ",
+        " [Saves the from thread’s pc to the stack and restores the to thread’s pc to the to thread’s TCB.] ",
+        " [Saves the from thread’s pc to its TCB and restores the to thread’s pc from its TCB.] "
+      ],
+      "answer": "Saves the from thread’s pc to the stack and restores the to thread’s pc from the stack.",
+      "solution": "The indicated part of the code saves the from thread’s pc (program counter) to the stack and restores the to thread’s pc from the stack. This is done using assembly code that pushes the registers onto the stack and pops them off in reverse order."
+    },
+    {
+      "question": "What’s the worst choice of sort for large sorting problems where reliably quick performance is critical?",
+      "options": [
+        " [Insertion Sort] ",
+        " [Quick Sort] ",
+        " [Selection Sort] ",
+        " [Merge Sort] "
+      ],
+      "answer": "Selection Sort",
+      "solution": "The worst choice of sort for large sorting problems where reliably quick performance is critical is Selection Sort. Selection Sort has a time complexity of O(n^2), which makes it inefficient for large datasets."
+    },
+    {
+      "question": "What’s the largest number of cycles of length 1 that there could be in the graph?",
+      "options": [
+        " [0] ",
+        " [1] ",
+        " [2] ",
+        " [3] "
+      ],
+      "answer": "0",
+      "solution": "There could be a maximum of 0 cycles of length 1 in the graph since there are no self-loops."
+    },
+    {
+      "question": "What’s the largest number of paths of length 1 that are not cycles that there could be in the graph?",
+      "options": [
+        " [n] ",
+        " [n * (n - 1)] ",
+        " [n * (n - 1) * (n - 2)] ",
+        " [n * (n - 1) * (n - 2) * (n - 3)] "
+      ],
+      "answer": "n * (n - 1)",
+      "solution": "The largest number of paths of length 1 that are not cycles in the graph is n * (n - 1), where n is the number of nodes in the graph. Each node can have n - 1 choices to go next."
+    }
+  ]
+}

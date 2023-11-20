@@ -1,0 +1,135 @@
+{
+  "questions": [
+    {
+      "question": "Which processor originates PIO?",
+      "options": [
+        " [CPU] ",
+        " [I/O Bus] ",
+        " [Memory] ",
+        " [I/O Controller] "
+      ],
+      "answer": "CPU",
+      "solution": "PIO is initiated by the CPU (Slide 4)."
+    },
+    {
+      "question": "Which processor originates DMA?",
+      "options": [
+        " [CPU] ",
+        " [I/O Bus] ",
+        " [Memory] ",
+        " [I/O Controller] "
+      ],
+      "answer": "CPU",
+      "solution": "DMA addresses and sizes are programmed by the CPU using PIO (Slide 8)."
+    },
+    {
+      "question": "Which processor originates interrupts?",
+      "options": [
+        " [CPU] ",
+        " [I/O Bus] ",
+        " [Memory] ",
+        " [I/O Controller] "
+      ],
+      "answer": "I/O Controller",
+      "solution": "Controller can signal the CPU when needed and CPU checks for interrupts on every cycle (Slide 8)."
+    },
+    {
+      "question": "When would PIO be a better choice than interrupts for devices?",
+      "options": [
+        " [Devices that process user input (e.g., keyboard, mouse)] ",
+        " [Programmable timers (e.g., execute a process one second from now)] ",
+        " [Clock (e.g., get current time of day)] ",
+        " [Secondary storage (e.g., hard disks)] "
+      ],
+      "answer": "Devices that process user input (e.g., keyboard, mouse)",
+      "solution": "Polling presents a better use-case than interrupts for devices that process user input (Slide 12)."
+    },
+    {
+      "question": "Which option is better suited for notifying the CPU of a touched position on a touchscreen monitor?",
+      "options": [
+        " [CPU periodically requests for last touched position] ",
+        " [Monitor controller uses PIO to notify CPU] ",
+        " [Monitor controller stores location in memory, CPU periodically checks memory for new touch] ",
+        " [Monitor controller interrupts CPU, which runs a pre-determined interrupt handler] "
+      ],
+      "answer": "Monitor controller interrupts CPU, which runs a pre-determined interrupt handler",
+      "solution": "For a touchscreen monitor notifying the CPU of a touched position, it is better suited for the Monitor controller to interrupt the CPU, which runs a pre-determined interrupt handler (Slide 13)."
+    },
+    {
+      "question": "What is a better option for the CPU to turn off the Num Lock indicator on the keyboard?",
+      "options": [
+        " [CPU sends PIO request to the keyboard device] ",
+        " [CPU changes a specific register associated to the indicator] ",
+        " [CPU changes a specific memory location in main memory associated to the indicator] ",
+        " [CPU interrupts the keyboard controller requesting a change in indicator values] "
+      ],
+      "answer": "CPU changes a specific register associated to the indicator",
+      "solution": "To turn off the Num Lock indicator on the keyboard, it is better for the CPU to change a specific register associated with the indicator (Slide 14)."
+    },
+    {
+      "question": "When does the CPU request data from the disk during a read operation?",
+      "options": [
+        " [Before the read starts] ",
+        " [After the read completes] ",
+        " [During the read operation] "
+      ],
+      "answer": "Before the read starts",
+      "solution": "The CPU requests data from the disk before the read starts (Slide 16)."
+    },
+    {
+      "question": "What is the purpose of the computeChecksumAndPrint function?",
+      "options": [
+        " [To compute the checksum of a disk block] ",
+        " [To print the computed checksum] ",
+        " [Both compute the checksum and print it] ",
+        " [To compute the checksum asynchronously] "
+      ],
+      "answer": "Both compute the checksum and print it",
+      "solution": "The computeChecksumAndPrint function computes the checksum of a disk block and also prints the computed checksum (Slide 29)."
+    },
+    {
+      "question": "What procedure calls computeChecksum in the checksumDiskData function?",
+      "options": [
+        " [checksumDiskData] ",
+        " [the procedure that calls checksumDiskData] ",
+        " [another procedure in the program] ",
+        " [the disk Interrupt Service Routine] "
+      ],
+      "answer": "the disk Interrupt Service Routine",
+      "solution": "The disk Interrupt Service Routine calls the computeChecksum procedure in the checksumDiskData function (Slide 26)."
+    },
+    {
+      "question": "What is the purpose of the computeChecksumAndCallback function?",
+      "options": [
+        " [To compute the checksum of a disk block] ",
+        " [To call a callback function after computing the checksum] ",
+        " [Both compute the checksum and call a callback function] ",
+        " [To compute the checksum asynchronously] "
+      ],
+      "answer": "Both compute the checksum and call a callback function",
+      "solution": "The computeChecksumAndCallback function computes the checksum of a disk block and also calls a callback function (Slide 29)."
+    },
+    {
+      "question": "Which event-driven programming model often uses a set of sequential/synchronous processes in which processes can fire events that cause other processes to run in parallel?",
+      "options": [
+        " [CSP] ",
+        " [Javascript in web browsers] ",
+        " [AJAX requests in Javascript] ",
+        " [GUI programming] "
+      ],
+      "answer": "CSP",
+      "solution": "The CSP (Communicating Sequential Processes) programming model often uses a set of sequential/synchronous processes in which processes can fire events that cause other processes to run in parallel (Slide 31)."
+    },
+    {
+      "question": "What can make programs more difficult to write and debug?",
+      "options": [
+        " [Asynchrony] ",
+        " [Polling] ",
+        " [Interrupts] ",
+        " [PIO] "
+      ],
+      "answer": "Asynchrony",
+      "solution": "Asynchrony can make programs more difficult to write and debug (Slide 31)."
+    }
+  ]
+}
